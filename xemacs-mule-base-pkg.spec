@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Basic Mule support, required for building with Mule.
 
-%description -l pl 
+%description -l pl
 Podstawowa obs³uga Mule, wymagana do budowania z Mule.
 
 %prep
@@ -31,14 +31,14 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/mule-base/ChangeLog 
+gzip -9nf lisp/mule-base/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/mule-base/ChangeLog.gz 
+%doc lisp/mule-base/ChangeLog.gz
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
