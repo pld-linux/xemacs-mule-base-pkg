@@ -2,8 +2,8 @@ Summary:	Basic Mule support, required for building with Mule
 Summary(pl):	Podstawowa obs³uga Mule, wymagana do budowania z Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
-Version:	1.39
-Release:	2
+Version:	1.42
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
@@ -31,8 +31,6 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/mule-base/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -41,7 +39,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/mule-base/ChangeLog.gz
+%doc lisp/mule-base/ChangeLog
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
