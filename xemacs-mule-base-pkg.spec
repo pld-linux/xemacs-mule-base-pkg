@@ -2,7 +2,7 @@ Summary:	Basic Mule support, required for building with Mule
 Summary(pl):	Basic Mule support, required for building with Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
-Version:	1.34
+Version:	1.35
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
