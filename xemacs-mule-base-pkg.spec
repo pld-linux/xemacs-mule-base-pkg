@@ -1,11 +1,12 @@
 Summary:	Basic Mule support, required for building with Mule
-Summary(pl):	Basic Mule support, required for building with Mule
+Summary(pl):	Podstawowa obs³uga Mule, wymagana do budowania z Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
 Version:	1.39
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 URL:		http://www.xemacs.org/
@@ -18,8 +19,10 @@ Requires:	xemacs-apel-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Basic Mule support, required for building with Mule.
 
 %description -l pl 
+Podstawowa obs³uga Mule, wymagana do budowania z Mule.
 
 %prep
 %setup -q -c
