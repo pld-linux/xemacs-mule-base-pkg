@@ -15,13 +15,11 @@ Requires:	xemacs
 Requires:	xemacs-fsf-compat-pkg
 Requires:	xemacs-base-pkg
 Requires:	xemacs-apel-pkg
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 
-
 %description -l pl 
-
 
 %prep
 %setup -q -c
