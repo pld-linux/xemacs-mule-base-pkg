@@ -2,12 +2,12 @@ Summary:	Basic Mule support, required for building with Mule
 Summary(pl):	Podstawowa obs³uga Mule, wymagana do budowania z Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
-Version:	1.44
-Release:	2
+Version:	1.48
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	9eaa93208008617bd8f0d34448dcfaa3
+# Source0-md5:	88865d055501ec5f7caa07e640f524cd
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
