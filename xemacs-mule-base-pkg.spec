@@ -1,5 +1,5 @@
 Summary:	Basic Mule support, required for building with Mule
-Summary(pl):	Podstawowa obs≥uga Mule, wymagana do budowania z Mule
+Summary(pl.UTF-8):   Podstawowa obs≈Çuga Mule, wymagana do budowania z Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
 Version:	1.48
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Basic Mule support, required for building with Mule.
 
-%description -l pl
-Podstawowa obs≥uga Mule, wymagana do budowania z Mule.
+%description -l pl.UTF-8
+Podstawowa obs≈Çuga Mule, wymagana do budowania z Mule.
 
 %prep
 %setup -q -c
