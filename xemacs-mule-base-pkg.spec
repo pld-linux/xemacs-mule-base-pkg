@@ -1,5 +1,5 @@
 Summary:	Basic Mule support, required for building with Mule
-Summary(pl.UTF-8):   Podstawowa obsługa Mule, wymagana do budowania z Mule
+Summary(pl.UTF-8):	Podstawowa obsługa Mule, wymagana do budowania z Mule
 Name:		xemacs-mule-base-pkg
 %define 	srcname	mule-base
 Version:	1.48
